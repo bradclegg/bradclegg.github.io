@@ -43,11 +43,14 @@ nav ul {
 }
 
 nav {
-    position: fixed;
-    flex-direction: row;
+     position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
     background-color: aqua;
-    padding-right: 100%;
+  
     
     
 }
