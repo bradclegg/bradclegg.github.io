@@ -35,33 +35,41 @@ main {
  align-items: center;
  background-image: url("/plan-images/sunny-winter.jpg"); /* adds background image*/
  background-size: cover;
+ flex-direction: column;
+ justify-content: space-between;
 }
 
 nav ul {
- display: flex;
- list-style: none;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 6px;
 }
 
 nav {
-     position: fixed;
+    text-align: center;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    text-align: center;
     display: block;
     background-color: aqua;
-  
+    padding-bottom: 45px;
+    
+}
+
+.nav-class {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
     
     
+
 }
 
 .site-name {
     font-size: 2em; /* makes the titles name larger and bolder */
     font-weight: 600;
-}
-
-nav ul li {
-    padding-right: 1em;;
 }
 
 footer {
