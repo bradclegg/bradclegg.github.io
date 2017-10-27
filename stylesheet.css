@@ -22,28 +22,47 @@ any older browsers that don't recognize
 the HTML5 semantic elements */
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    background-color: #00a8eb;
+}
+
+header img {
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 80px;
+    width: 80px;
+    border-radius: 15px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
+
+header h1 {
+    margin-right: 125px;
+    margin-top: 45px;
+    font-size: 22px;
+}
+
 body {
- margin: 0; /* remove any margin from body */
- padding: 0; /* ditto for padding */
-font: Helvetica, sans-serif;
-font-size: 20px;
+    margin: 0; /* remove any margin from body */
+    padding: 0; /* ditto for padding */
+    font-family: Palatino Linotype, sans-serif;
+    font-size: 20px;
 }
 
 main {
- display: flex;
- flex-flow: column nowrap;
- align-items: center;
- background-image: url("/plan-images/sunny-winter.jpg"); /* adds background image*/
- background-size: cover;
- flex-direction: column;
- justify-content: space-between;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-image: url("/plan-images/sunny-winter.jpg"); /* adds background image*/
+    background-size: cover;
 }
 
 nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding-left: 6px;
+   
 }
 
 nav {
@@ -52,34 +71,32 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-    display: block;
-    background-color: aqua;
-    padding-bottom: 45px;
-    
+    background-color: #00a8eb;
+    display: flex;
+    flex-direction: 
 }
 
-.nav-class {
-    list-style: none;
+nav ul {
     display: flex;
     flex-direction: row;
-    
-    
+    list-style: none;
+    margin-left: -35px;
+}
 
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 5px;
+    color: black;
+}
+nav a:hover {
+    text-decoration: none; /* changes links when hoverd on */
+    color: #FFF;
 }
 
 .site-name {
     font-size: 2em; /* makes the titles name larger and bolder */
     font-weight: 600;
-}
-
-footer {
-    position: fixed;
-    font-size: 18px;
-    background-color: aqua; /* changes color of background */
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
 }
 
 h1,
@@ -88,36 +105,81 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Sansita, "second choice", generic-family;
-}
-
-header {
-    background-color: aqua; /* changes color of background */
-}
-
-nav a:hover {
-    text-decoration: none; /* changes links when hoverd on */
-    color: #FFF;
-}
-
-.overview {
-    background-color: rgba(200,200,200,.6); /* makes box around content */
-    margin: .2em auto;
-    border: 1px solid;
-    border-radius: 5px;
+    font-family: sans-serif, generic-family;
 }
 
 .cur_conditions {
     background-color: rgba(200,200,200,.6); /* makes box around content */
     margin: .2em auto;
     border: 1px solid;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.cur_conditions h2 {
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+.cur_conditions ul {
+    list-style: none;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.cur_temp {
+    background-color: rgba(200,200,200,.6); /* makes box around content */
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+section p b {
+    font-size: 40px;
+}
+
+section img {
+    float: left;
+}
+
+.high-low {
+    float: left;
+    margin-left: 20px;
+    padding-right: 10px;
+}
+
+.cur_temp img {
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .hourly {
     background-color: rgba(200,200,200,.6); /* makes box around content */
     margin: .2em auto;
     border: 1px solid;
-    border-radius: 5px;
+    border-radius: 10px;
 
+}
+
+.hourly h2 {
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.hourly ul {
+    list-style: none;
+}
+
+footer {
+    font-size: 18px;
+    background-color: #00a8eb; /* changes color of background */
+    right: 0;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 56px;
 }
