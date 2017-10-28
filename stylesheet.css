@@ -182,6 +182,8 @@ section img {
 
 .hourly ul {
     list-style: none;
+    overflow: auto;
+    height: 250px;
 }
 
 /*-- footer --*/
@@ -222,7 +224,7 @@ footer {
         flex-flow: row;
         align-items: initial;
         flex-wrap: wrap;
-        padding-bottom: 8%;
+        padding-bottom: 6%;
     }
     
     footer {
