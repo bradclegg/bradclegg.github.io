@@ -29,7 +29,7 @@ $(function () {
             var location = data['location']['city'];
             var state = data['location']['state'];
             var temp_f = data['current_observation']['temp_f'];
-            var weather = data['current_observation']['weather'];
+            var current_condition = data['current_observation']['weather'];
             var windchill = data['current_observation']['windchill_string']
             var feels_like = data['current_observation'][
                 'feelslike_f']
@@ -53,9 +53,9 @@ $(function () {
             
             temp.innerHTML = temp_f;
             
-            summary.innerHTML = weather;
+            summary.innerHTML = current_condition;
 
-            add1.innerHTML = "Feels like " + feels_like + " F";
+            add1.innerHTML = "Feels like " + feels_like + "° F";
             
             add2.innerHTML = "The current time is " + time;
             
