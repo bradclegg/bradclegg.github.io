@@ -31,8 +31,7 @@ $(function () {
             var temp_f = data['current_observation']['temp_f'];
             var current_condition = data['current_observation']['weather'];
             var windchill = data['current_observation']['windchill_string']
-            var feels_like = data['current_observation'][
-                'feelslike_f']
+            var feels_like = data['current_observation']['feelslike_f']
             var time = data['current_observation']['local_time_rfc822']
             var uv = "UV: " + data['current_observation']['UV'];
 
