@@ -57,9 +57,9 @@ $(function () {
 
             add1.innerHTML = "Feels like " + feels_like + " F";
             
-            add2.innerHTML = time;
+            add2.innerHTML = "The current time is " + time;
             
-            add3.innerHTML = uv;
+            add3.innerHTML = "The UV index is " + uv;
 
 
       $("#cover").fadeOut(250);
