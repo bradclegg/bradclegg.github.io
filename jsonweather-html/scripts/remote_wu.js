@@ -33,9 +33,7 @@ $(function () {
             var windchill = data['current_observation']['windchill_string']
             var feels_like = data['current_observation'][
                 'feelslike_f']
-            var time = data['current_observation']['local_time_rfc822']
-            console.log("Current temperature in " + location + " is: " + temp_f);
-            console.log(data);
+            var uv = "UV: " + data['current_observation']['UV'];
 
             let city = document.getElementById("cityDisplay");
 
@@ -60,7 +58,7 @@ $(function () {
             
             add2.innerHTML = time;
             
-            add3.innerHTML = "Wind chill at " + windchill;
+            add3.innerHTML = uv;
 
 
       $("#cover").fadeOut(250);
