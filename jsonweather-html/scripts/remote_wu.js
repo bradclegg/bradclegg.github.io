@@ -55,7 +55,7 @@ $(function () {
             
             summary.innerHTML = weather;
 
-            add1.innerHTML = "Feels like " + feels_like;
+            add1.innerHTML = "Feels like " + feels_like + " F";
             
             add2.innerHTML = time;
             
