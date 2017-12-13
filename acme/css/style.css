@@ -240,9 +240,6 @@ footer {
 
 /*-- Large desktop --*/
 @media (min-width: 376px) {
-    main {
-    }
-    
     header {
         width: 98.5%;
         margin-left: 10px;

@@ -1,0 +1,131 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0; /* remove any margin from body */
+    padding: 0; /* ditto for padding */
+    font-family: Palatino Linotype, sans-serif;
+    font-size: 20px;
+    background-image: url("/acme/images/site/background.jpg"); /* adds background image*/
+    background-size: cover;
+}
+
+header img {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 5em;
+    width: 98.5%;
+}
+
+header {
+    margin-right: 15px;
+}
+
+/*-- background --*/
+.home-content {
+    background-color: #ffffff;
+    margin-left: 10px;
+    width: 98.5%;
+    margin-top: -21px;
+}
+
+/*-- Navagation Bar --*/
+nav {
+    background-color: #de2226;
+    margin-top: -25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+/*-- Welcome message --*/
+.welcome-message {
+    background-color: #ffffff;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 98.5%;
+    text-align: center;
+    margin-top: -20px;
+    width: 95%;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #ffffff;
+    border-top: solid;
+    border-color: #000000;
+    text-align: center;
+    width: 98.5%;
+    margin-left: 10px;
+    font-size: 12px;
+    margin-right: 10px;
+    width: 95%;
+}
+
+@media (min-width: 376px) {
+     header {
+        width: 98.5%;
+        margin-left: 10px;
+        BACKGROUND-COLOR: #ffffff;
+        margin-top: 10px;
+    }
+    
+    header img {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 7em;
+        width: 36.5%;
+    }
+    
+    nav {
+        width: 98.5%;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    .welcome-message {
+        width: 97.5%;
+        font-size: 35px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        text-align: left;
+        margin-right: 0px;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+    
+    .home-content {
+        width: 98.5%;
+        margin-right: 125px;
+        margin-top: -25px;
+    }
+    
+    footer {
+        width: 98.5%;
+    }
+}
