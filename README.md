@@ -1,2 +1,2 @@
-# bradclegg.github.io
-hi
+# justindclegg.github.io
+Justin Clegg
